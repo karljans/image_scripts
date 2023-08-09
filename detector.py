@@ -44,7 +44,7 @@ class ObjectDetection():
         # Perform object detection using the YOLO model
         results = self.model(img,
                              conf=self.conf_thresh,
-                             half=True,
+                             half=False,
                              classes=self.classes,
                              device=0,
                              iou=self.iou_thresh,
