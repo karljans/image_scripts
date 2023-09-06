@@ -46,14 +46,14 @@ class ObjectDetection():
                              device=0,
                              iou=self.iou_thresh,
                              imgsz=self.model_size,
-                             source='/home/can/storage/videos/aire/kaku_sadamasse/_frontpi_oak_rgb_image_raw_compressed/*.jpg',
+                             source='/home/can/storage/videos/aire/toward_boat_front/_frontpi_oak_rgb_image_raw_compressed/*.jpg',
                              save=True,
                              save_conf= True)
         return results[0].plot()
     
 
-# weight_file = '/home/can/storage/weight_files/aire/custom/weights/v5m6.pt'
-# od = ObjectDetection(weight_file, 1280, 0.5, 0.3, [0,1])
-weight_file = '/home/can/Downloads/yolov5x6.pt'
-od = ObjectDetection(weight_file, 1280, 0.5, 0.3, [8])
+weight_file = '/home/can/storage/weight_files/aire/custom/weights/v5l6.pt'
+od = ObjectDetection(weight_file, 1280, 0.5, 0.3, [0,1])
+# weight_file = '/home/can/Downloads/yolov5x6.pt'
+# od = ObjectDetection(weight_file, 1280, 0.5, 0.3, [8])
 od.detect_objects()
