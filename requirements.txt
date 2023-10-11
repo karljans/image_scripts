@@ -1,0 +1,4 @@
+rosbags
+opencv-python
+numpy
+argparse
